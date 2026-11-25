@@ -58,7 +58,7 @@ public class RobotContainer {
   // private final IntakeSubsystem m_IntakeSubsystem = new IntakeSubsystem();
 
   private final CommandXboxController m_driverController = new CommandXboxController(OperatorConstants.kDriverControllerPort);
-  private final CommandXboxController m_operatorController = new CommandXboxController(OperatorConstants.kOperatorControllerPort);
+  // private final CommandXboxController m_operatorController = new CommandXboxController(OperatorConstants.kOperatorControllerPort);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
@@ -74,10 +74,10 @@ public class RobotContainer {
     // NamedCommands.registerCommand("intake", m_IntakeSubsystem.runRollers());
     // NamedCommands.registerCommand("stopIntake", m_IntakeSubsystem.stop());
     // NamedCommands.registerCommand("stopShooting", m_ShooterSubsystem.stop());
-    NamedCommands.registerCommand("setAngleRightClockwise", m_driveSubsystem.setAngleOffset(90));
+    // NamedCommands.registerCommand("setAngleRightClockwise", m_driveSubsystem.setAngleOffset(90));
     
-    autoChooser = AutoBuilder.buildAutoChooser();
-    SmartDashboard.putData(autoChooser);
+    // autoChooser = AutoBuilder.buildAutoChooser();
+    // SmartDashboard.putData(autoChooser);
 
     configureBindings();
 
