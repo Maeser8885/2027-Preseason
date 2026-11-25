@@ -24,7 +24,7 @@ hs_err_pid*
 replay_pid*
 
 # Gradle / WPILib build output
-.Gradle
+.gradle
 /build/
 bin/
 !gradle-wrapper.jar
